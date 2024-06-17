@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  /* use fraction units in grids (fr) */
+  grid-template-columns: repeat(3, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
+}
+
+/* element selector */
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+/* class selector */
+.box {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 1px;
+}
